@@ -2,12 +2,13 @@ import React, { useState } from 'react'
 import {motion} from 'framer-motion'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { createUserWithEmailAndPassword, getAuth, signInWithEmailAndPassword } from 'firebase/auth';
+import { createUserWithEmailAndPassword, getAuth, GoogleAuthProvider, signInWithEmailAndPassword, signInWithPopup } from 'firebase/auth';
 
 import Loader from '../../components/Loader';
 import { useNavigate } from 'react-router';
 import { app, auth } from '../../firebase.config';
 import { useStateValue } from '../../context/StateProvider';
+import { actionType } from '../../context/reducer';
 
 function LoginPage() {
     const [{user}, dispatch] = useStateValue();
@@ -15,8 +16,19 @@ function LoginPage() {
   const [password,setPassword] = useState('')
  
   const [isLoading,setIsLoading] = useState(false)
+  const firebaseAuth = getAuth(app);
+    const provider = new GoogleAuthProvider();
  
   const navigate = useNavigate()
+  const loginWithGoogle = async () => {
+    const {user :{refreshToken, providerData}} = await signInWithPopup(firebaseAuth, provider)
+    dispatch({
+        type: actionType.SET_USER,
+        user: providerData[0],
+    })
+    localStorage.setItem("user",JSON.stringify(providerData[0]))
+    navigate('/Products')
+  }
 
   const loginUser = (e) => {
     e.preventDefault()
@@ -82,7 +94,13 @@ function LoginPage() {
                 <button type='submit' className='ml-0 w-full h-[40px] border-none outline-none justify-center items-center flex flex-col
            bg-[#FEEBD6] ] px-12 py-2 rounded-lg text-lg text-[gray-700] font-bold'
                 >Login</button>
+                <p className="text-sm font-semibold my-12 justify-center items-center text-[#121212] flex drop-shadow-xl"> or Login with Google</p>
+            <button className='ml-0 w-full h-[40px] border-none outline-none justify-center items-center flex flex-col
+           bg-[#FEEBD6] ] px-12 py-2 rounded-lg text-lg text-[gray-700] font-bold'
+           onClick={loginWithGoogle}>GOOGLE</button>
             </form>
+
+            
         </motion.section>
     </div>
     </>
