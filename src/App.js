@@ -17,7 +17,8 @@ import { fetchUser } from './utils/fetchingLocalStorageData'
 import ItemPage from './components/ItemPage'
 import CheckOutPage from './components/CheckOutPage'
 import ErrorPage from './components/ErrorPage'
-import EditItems from './components/EditItems'
+import EditItems from './Pages/EditItems/EditItems'
+
 
 
 function App() {

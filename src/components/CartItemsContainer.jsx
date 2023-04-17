@@ -8,19 +8,11 @@ import { actionType } from '../context/reducer';
 function CartItemsContainer({product}) {
     const [quantity,setQuantity] = useState(1)
     const [price,setPrice] = useState((product.price * quantity).toFixed(2))
+    const [test,setTest] = useState(0)
+   
     const [{cartShow,cartItems, user,cartPrice}, dispatch] = useStateValue();
-    const [filtredProducts,setFiltredProducts] = useState('')
-    
-    
-    const totalPrice = (product) =>{
+    const [filtredProducts,setFiltredProducts] = useState('')   
 
-        let sum = (product.price * quantity).toFixed(2)
-        
-        
-
-
-       
-    }
 
    
 
@@ -50,12 +42,12 @@ function CartItemsContainer({product}) {
         }
         useEffect(() => {
           quantity == 1 ? setPrice(product.price) : setPrice((product.price * quantity).toFixed(2))
-        
+          
           
         }, [quantity])
         
        
-    console.log(product.quantity)
+    
   return (
     <div className='w-full p-1 px-2 rounded-lg bg-cartItem flex items-center  gap-2'>
                         <img 

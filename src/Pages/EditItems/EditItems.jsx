@@ -1,5 +1,5 @@
 import React from 'react'
-import { useStateValue } from '../context/StateProvider'
+import { useStateValue } from '../../context/StateProvider'
 
 
 function EditItems() {

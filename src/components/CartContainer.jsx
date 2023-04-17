@@ -20,17 +20,16 @@ function CartContainer() {
 
     const [{cartShow,cartItems, user,cartPrice}, dispatch] = useStateValue();
 
-      
+      const price = () => {
+        cartItems.forEach(element => {
+            setSum(sum + (element.price * element.quantity))
+        });
+      }
     
-    // useEffect(() => {
-    //   if(discount > 3 ){
-    //     let asd =  discountCodes.filter(discountCode => discountCode.code == discount)
-    //     asd ? console.log(asd) : console.log('Nope')
-    //   }
-      
-    // }, [discount.length > 2])
     
+   
 
+   
     
     
     const showCart = () =>{
@@ -80,8 +79,7 @@ function CartContainer() {
         }
      
         
-        
-        
+      
 
   return (
     
@@ -135,8 +133,8 @@ function CartContainer() {
         {cartItems && cartItems.length > 0 
         ? (
             <div className='w-full flex-1 bg-cartTotal rounded-t-[2rem] flex flex-col 
-                items-center justify-evenly mt-6 pb-32 px-8 py-4'>
-                    <div className='w-full flex items-center justify-between'>
+                items-center justify-evenly mt-36 pb-32 px-8 py-4'>
+                    {/* <div className='w-full flex items-center justify-between'>
                     <p className='text-gray-400 text-lg'>Discount:</p>
                     <input 
                     type="text"
@@ -145,7 +143,7 @@ function CartContainer() {
                         onChange={(e) => checkDiscountCode(e.target.value)}
                         
                         />
-                    </div>
+                    </div> */}
                     
                     <div className='w-full border-b border-gray-600 my-6'></div>
 
@@ -154,7 +152,7 @@ function CartContainer() {
                             Total
                         </p>
                         <p className='text-gray-200 text-xl font-semibold'>
-                            $ {setSum}
+                            $ {sum}
                         </p>                   
                     </div>
                     <Link to={'/checkout'}>
