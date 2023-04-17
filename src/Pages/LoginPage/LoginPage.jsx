@@ -21,8 +21,8 @@ function LoginPage() {
   const loginUser = (e) => {
     e.preventDefault()
     console.log(email,password)
-    if(password.length < 4 ){
-      toast.error('Password must be at least 4 characters long!')
+    if(password.length < 6 ){
+      toast.error('Password must be at least 6 characters long!')
     }else if (!email){
         toast.error('Email is required!')
     }
@@ -31,15 +31,20 @@ function LoginPage() {
     signInWithEmailAndPassword(auth, email, password)
   .then((userCredential) => {
     // Signed in 
-    const user = userCredential.user;
-    console.log(user)
+    const asd = userCredential.user;
+    console.log(asd)
     setIsLoading(false)
-    console.log(user.providerData[0])
+    console.log(asd.providerData[0])
        
-        
+    dispatch({
+      type: actionType.SET_USER,
+      user: asd.providerData[0],
+  })
+  localStorage.setItem("user",JSON.stringify(providerData[0]))
     toast.success('Login successful!')
     navigate('/Products')
     // ...
+    
   })
   .catch((error) => {
     setIsLoading(false)
@@ -53,21 +58,32 @@ function LoginPage() {
     <>
     <ToastContainer />
     {isLoading && <Loader />}
-    <div className='justify-center items-center flex flex-col'>
-        <section className='h-screen justify-center items-center' >
-        Register
+    <div 
+    
+    className='justify-centeritems-center flex flex-col'>
+        <motion.section 
+        initial={{opacity:0,x:-1000,y:-10}}
+        animate={{opacity:1,x:0,y:0}}
+        exit={{opacity:0,x:400}}
+        className='h-full flex flex-col justify-center items-center' >
+        <p className="text-xl font-semibold my-2 text-[#121212] flex drop-shadow-xl">Login</p>
             <form onSubmit={loginUser}>
                 <input 
                 type='email' 
                 placeholder='Email' required 
                 value={email}
                  onChange={(e) => setEmail(e.target.value)}
-                 className=''/>
-                <input type="password" placeholder='Enter a passowrd' required value={password} onChange={(e) => setPassword(e.target.value)} />
+                 className='items-center flex flex-col justify-center my-2 px-2 h-[40px] rounded-xl space-y-4'/>
+                <input type="password"
+                 placeholder='Enter a passowrd'
+                  required value={password} onChange={(e) => setPassword(e.target.value)} 
+                  className='items-center flex flex-col justify-center my-2 px-2 h-[40px] rounded-xl space-y-4'/>
                 
-                <button type='submit'>Login</button>
+                <button type='submit' className='ml-0 w-full h-[40px] border-none outline-none justify-center items-center flex flex-col
+           bg-[#FEEBD6] ] px-12 py-2 rounded-lg text-lg text-[gray-700] font-bold'
+                >Login</button>
             </form>
-        </section>
+        </motion.section>
     </div>
     </>
   )

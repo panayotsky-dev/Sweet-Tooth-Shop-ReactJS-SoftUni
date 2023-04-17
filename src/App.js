@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import Header from './components/Header'
 import {Route,Routes} from 'react-router-dom'
 import MainContainer from './components/MainContainer'
@@ -16,12 +16,14 @@ import RegisterPage from './Pages/Register/RegisterPage'
 import { fetchUser } from './utils/fetchingLocalStorageData'
 import ItemPage from './components/ItemPage'
 import CheckOutPage from './components/CheckOutPage'
+import ErrorPage from './components/ErrorPage'
+import EditItems from './components/EditItems'
 
 
 function App() {
   
   const [{user,uploadedProducts},dispatch] = useStateValue();
-  
+
   const fetchItems = async () => {
     await getAllProducts().then(item=>{
       dispatch({
@@ -33,6 +35,7 @@ function App() {
   useEffect(()=> {
     fetchItems()
   },[])
+  
   return (
     <AnimatePresence >
         <div className='sexygradient'> 
@@ -43,13 +46,14 @@ function App() {
       <main className='mt-14 md:mt-20 px-4 md:p-16 py-4 w-full h-full '>
         <Routes>
           <Route path='/*' element={<MainContainer />}/>          
-          <Route path='/login' element={<LoginPage />} />
-          <Route path='/register' element={<RegisterPage />} />
+          {!user ? <Route path='/login' element={<LoginPage />} /> : <Route path='/login' element={<ErrorPage />} />}
+          {!user ?<Route path='/register' element={<RegisterPage />} /> : <Route path='/register' element={<ErrorPage />} />}
           <Route path='/products' element={<ProductPage />}/>
           <Route path='/aboutus' element={<AboutUsPage />}/>
-          <Route path='/createitem' element={<CreateContainer />}/>
+          {user && user.email === 'panayotpetkov@gmail.com' ?<Route path='/createitem' element={<CreateContainer />}/> : <Route path='/createitem' element={<ErrorPage />} />}
+          {user && user.email === 'panayotpetkov@gmail.com' ?<Route path='/edititems' element={<EditItems />}/> : <Route path='/edititems' element={<ErrorPage />} />}
           <Route path='/Products/*' element={<ItemPage product={uploadedProducts?.filter(product => product.id)} />}/>
-          <Route path='/checkout' element={<CheckOutPage />}/>
+          {user ? <Route path='/checkout' element={<CheckOutPage />}/> : <Route path='/checkout' element={<ErrorPage />} />}
         </Routes>
       </main>
       

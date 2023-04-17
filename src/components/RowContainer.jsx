@@ -32,9 +32,9 @@ function RowContainer({flag,products}) {
     
     <div 
     
-    className={`w-full my-10 flex gap-12 items-center flex-wrap ${// dynamic className/string
+    className={`w-full my-10 h-full flex gap-12 items-center flex-wrap ${// dynamic className/string
         flag ? "overflow-x-scroll scrollbar-none"
-        : "overflow-x-hidden flex-wrap"}`}
+        : "overflow-x-hidden flex-wrap "}`}
     >
        {products &&
         products.map((product)=>(

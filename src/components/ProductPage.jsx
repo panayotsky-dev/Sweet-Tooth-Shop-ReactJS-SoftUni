@@ -14,8 +14,8 @@ function ProductPage() {
     console.log(selectedCategory)
 
   return (
-   <div className='h-screen w-full'>
-    <div className='w-full h-full relative flex-col items-center justify-center 
+   <div className=' w-full'>
+    <div className='w-full h-screen relative flex-col items-center justify-center 
     bg-opacity-20 rounded-md py-6 px-6  bg-slate-600
     '>
           <section className='w-full my-2 ' id="menu">
@@ -24,7 +24,7 @@ function ProductPage() {
              '>
               Select Product Category
             </p>
-            <div className='w-full flex items-center justify-center lg:justify-center gap-6 py-6 '>
+            <div className='w-full flex items-center justify-center  gap-6 py-6 '>
                {categories && categories.map((category) => (
                  <div key={category.id} onClick={() => setSelectedCategory(category.name)}className='group bg-[#BFA5A5] w-24 min-w-[94px] h-28 cursor-pointer rounded-lg drop-shadow-lg flex flex-col
                  gap-3 items-center justify-center hover:bg-[#FFC5FF]' >

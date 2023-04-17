@@ -16,7 +16,6 @@ const [description,setdescription] = useState('')
 const [price,setPrice] = useState('')
 const [category,setCategory] = useState(null)
 
-
 const [msg,setMsg] = useState('')
 const [isLoading,setIsLoading] = useState(false)
 const [alertStatus,setAlertStatus] = useState('Danger');

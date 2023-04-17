@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 import { MdOutlineShoppingBag,MdAdd,MdLogout } from "react-icons/md";
 import { motion } from 'framer-motion'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { getAuth, GoogleAuthProvider, signInWithPopup } from 'firebase/auth'
 import { app } from '../firebase.config'
 import { actionType } from '../context/reducer';
@@ -73,24 +73,24 @@ const showCart = () =>{
             exit={{opacity:0,x:200}}
             className='flex items-center gap-8 '>
                     <Link to={'/Products'}>
-                        <li className='text-base text-headingColor cursor-pointer
-                        hover:text-headingColor duration-100 transition-all ease-in-out'
+                        <li className='text-bold hover:font-semibold text-headingColor cursor-pointer
+                        hover:underline underline-offset-4 duration-100 transition-all ease-in-out'
                         >Products</li>
                      </Link>
                      <Link to={'/AboutUs'}>
-                        <li className='text-base text-headingColor cursor-pointer
-                        hover:text-headingColor duration-100 transition-all ease-in-out'
+                        <li className='text-base hover:font-semibold text-headingColor cursor-pointer
+                        hover:underline underline-offset-4 duration-100 transition-all ease-in-out'
                         >About us</li>
                     </Link> 
                {!user&& (<>
                 <Link to={'/Login'}>
-                    <li className='text-base text-headingColor cursor-pointer
-                        hover:text-headingColor duration-100 transition-all ease-in-out' 
+                    <li className='text-base hover:font-semibold text-headingColor cursor-pointer
+                        hover:underline underline-offset-4 duration-100 transition-all ease-in-out' 
                         >Login</li>
                 </Link>
                 <Link to={'/Register'}>
-                    <li className='text-base text-headingColor cursor-pointer
-                        hover:text-headingColor duration-100 transition-all ease-in-out' 
+                    <li className='text-base hover:font-semibold text-headingColor cursor-pointer
+                        hover:underline underline-offset-4 duration-100 transition-all ease-in-out' 
                         >Register</li>
                 </Link></> )} 
             </motion.ul>
@@ -141,11 +141,11 @@ const showCart = () =>{
                             onClick={() => setIsMenu(false)}
                             >New Item<MdAdd /></p>
                             </Link>
-                            <Link to={'/allitems'}><p className='px-4 py-2 flex items-center gap-3 cursor-pointer
+                            <Link to={'/edititems'}><p className='px-4 py-2 flex items-center gap-3 cursor-pointer
                             hover:bg-slate-200 transition-all duration-100 ease-in-out
                              text-textColor text-base'
                              onClick={() => setIsMenu(false)}
-                             >All Items</p>
+                             >Edit Items</p>
                              </Link>
                              <Link to={'/allorders'}><p className='px-4 py-2 flex items-center gap-3 cursor-pointer
                             hover:bg-slate-200 transition-all duration-100 ease-in-out
