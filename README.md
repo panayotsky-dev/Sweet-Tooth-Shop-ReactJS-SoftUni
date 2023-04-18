@@ -55,3 +55,10 @@ Sweet Tooth is an e-shop with unique design that provides an easy and intuitive 
 
 ![profileMenu](https://user-images.githubusercontent.com/104060829/232702699-3dad0bea-b6be-4ce5-b31b-0fb667dc31af.PNG)
 ![shop](https://user-images.githubusercontent.com/104060829/232702739-e182a6b5-4623-4e9d-b780-2dddc5de44c0.PNG)
+![upload](https://user-images.githubusercontent.com/104060829/232928231-d7cca02e-ca1b-4a07-9d8d-43abae725c21.PNG)
+![z2](https://user-images.githubusercontent.com/104060829/232928355-06e3f719-a61b-478e-8780-fdea7e4bcc41.PNG)
+![profCont](https://user-images.githubusercontent.com/104060829/232928472-056aa4a0-c200-47c5-95bd-56a15f3d559f.PNG)
+![logError1](https://user-images.githubusercontent.com/104060829/232928812-644ca2f1-5b79-4ab7-8a98-a705921866da.PNG)
+![logerr3](https://user-images.githubusercontent.com/104060829/232928817-7e8bcaa2-865f-445a-8534-c7b3a5619034.PNG)
+![logerr2](https://user-images.githubusercontent.com/104060829/232928825-5c0145c5-6f93-4c83-a1ab-7bf46f4ebdad.PNG)
+![RegErr1](https://user-images.githubusercontent.com/104060829/232928840-aa77e582-3161-42ea-b8ce-504e72bd8714.PNG)
