@@ -1,5 +1,5 @@
 Hello! As the developer of the Sweet Tooth e-shop project, I am happy to share with you some further details about the project and how it was developed.
-
+https://typ-project-hwk3.vercel.app/
 Project Description:
 
 Sweet Tooth is an e-shop that sells coffee and sweet products. The website is built using ReactJS, Framer-Motion, and TailwindCSS. The website has an attractive UI design with a modern look and feel. The website uses Firebase for the database, storage, and authentication with Google.
@@ -50,5 +50,8 @@ Sweet Tooth is an e-shop with unique design that provides an easy and intuitive 
 ![pg1](https://user-images.githubusercontent.com/104060829/230747312-76055cb8-43c7-4532-b98b-6b96753d1d9c.JPG)
 
 ![pg2](https://user-images.githubusercontent.com/104060829/230747301-f74e5b1e-9ae6-40a6-9ada-f84a0ec057f2.JPG)
-![pg3](https://user-images.githubusercontent.com/104060829/230747303-de6056f6-1e01-4d5c-81cc-caecd1bdf0c1.JPG)
+![pg3](https://user-images.githubusercontent.com/104060829/230747303-de6056f6-1e01-4d5c-81cc-caecd1bdf0c1.JPG)![editpage](https://user-images.githubusercontent.com/104060829/232702213-39e8118c-8596-4636-903e-1f517bd99c89.PNG)
 
+
+![profileMenu](https://user-images.githubusercontent.com/104060829/232702699-3dad0bea-b6be-4ce5-b31b-0fb667dc31af.PNG)
+![shop](https://user-images.githubusercontent.com/104060829/232702739-e182a6b5-4623-4e9d-b780-2dddc5de44c0.PNG)
