@@ -1,5 +1,7 @@
 Hello! As the developer of the Sweet Tooth e-shop project, I am happy to share with you some further details about the project and how it was developed.
-https://typ-project-hwk3.vercel.app/
+ 
+ Project is deployed at vercel : https://sweet-tooth.vercel.app
+
 Project Description:
 
 Sweet Tooth is an e-shop that sells coffee and sweet products. The website is built using ReactJS, Framer-Motion, and TailwindCSS. The website has an attractive UI design with a modern look and feel. The website uses Firebase for the database, storage, and authentication with Google.
