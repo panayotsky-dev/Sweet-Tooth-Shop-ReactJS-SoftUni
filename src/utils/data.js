@@ -17,7 +17,7 @@ export const categories = [
         id:103,
         name:'Donuts',
         urlParamName:"donuts",
-        img:'donut.png'
+        img:'donutCategory.png'
     },
     {
         id:104,

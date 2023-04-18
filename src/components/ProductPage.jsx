@@ -7,6 +7,7 @@ import { useStateValue } from '../context/StateProvider'
 import CartContainer from './CartContainer'
 
 import { categories } from '../utils/data'
+import Footer from './Footer'
 
 function ProductPage() {
     const [{uploadedProducts,cartShow},dispatch] = useStateValue() 
@@ -14,6 +15,7 @@ function ProductPage() {
     console.log(selectedCategory)
 
   return (
+    <>
    <div className=' w-full'>
     <div className='w-full h-screen relative flex-col items-center justify-center 
     bg-opacity-20 rounded-md py-6 px-6  bg-slate-600
@@ -63,6 +65,8 @@ function ProductPage() {
    
     
     </div>
+    <Footer />
+    </>
   )
 }
 

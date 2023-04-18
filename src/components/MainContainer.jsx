@@ -4,16 +4,22 @@ import {motion} from 'framer-motion'
 import {MdChevronLeft,MdChevronRight} from 'react-icons/md'
 import RowContainer from './RowContainer'
 import { useStateValue } from '../context/StateProvider'
+import {useRive} from 'rive-react'
+
 
 import CartContainer from './CartContainer'
 import { Link } from 'react-router-dom'
+import RiveTest from './RiveTest'
+import Footer from './Footer'
 function MainContainer() {
 
-  const [{uploadedProducts,cartShow},dispatch] = useStateValue() 
+  const [{uploadedProducts,cartShow},dispatch] = useStateValue()
+
 
   return (   
-
+<>
     <div className='w-full h-screen flex flex-col items-center justify-center '>
+      
       <motion.img
       initial={{opacity:0,y:-600}}
       animate={{opacity:1,y:-100}}
@@ -24,7 +30,8 @@ function MainContainer() {
         src='/sweetth.png'
         alt='sweeth logo'
        />
-         <Link to={'/Products'}>      
+         <Link to={'/Products'}> 
+         <RiveTest />     
         <motion.button
                     whileTap={{scale:0.8}}
                     whileHover={{scale:1.2}}
@@ -38,6 +45,8 @@ function MainContainer() {
         </Link>
         
     </div>
+    <Footer />
+    </>
   )
 }
 

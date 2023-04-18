@@ -168,6 +168,7 @@ const showCart = () =>{
                 </div>
             </div>
         </div>
+        
 
 
 
@@ -258,6 +259,7 @@ const showCart = () =>{
 
         </div>
         </header>
+        
         
         
   )

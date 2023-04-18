@@ -16,13 +16,14 @@ export const saveItem = async (item) =>{
     
     await setDoc(doc(db,'uploadedProducts',`${Date.now()}`),item, {merge:true,})
 }
-// export const saveItem = async (item) => {
-//     if (item.title) { // If item already has an ID, update existing document
-//       await updateDoc(doc(db, 'uploadedProducts', item.id), item);
-//     } else { // Otherwise, create new document with auto-generated ID
-//       await setDoc(doc(db, 'uploadedProducts', `${Date.now()}`), item);
-//     }
-//   };
+export const updateItem = async (item) => {
+    if (item.id) { // If item already has an ID, update existing document
+      await updateDoc(doc(db, 'uploadedProducts', item.id), item);
+    }
+    // } else { // Otherwise, create new document with auto-generated ID
+    //   await setDoc(doc(db, 'uploadedProducts', `${Date.now()}`), item);
+    // }
+  };
 
 // fetching all items
 export const getAllProducts = async () =>{
@@ -31,6 +32,6 @@ export const getAllProducts = async () =>{
     )
     return items.docs.map((doc) => doc.data())    
 }
-export const deleteItem = async (id) => {
-    await deleteDoc(doc(db, 'uploadedProducts', id));
+export const deleteItem = async (id) => { 
+     await deleteDoc(doc(db, 'uploadedProducts', id));
   };

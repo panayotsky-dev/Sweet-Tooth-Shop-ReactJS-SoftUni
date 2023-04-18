@@ -9,6 +9,7 @@ import { useNavigate } from 'react-router';
 import { app, auth } from '../../firebase.config';
 import { useStateValue } from '../../context/StateProvider';
 import { actionType } from '../../context/reducer';
+import Footer from '../../components/Footer';
 
 function LoginPage() {
     const [{user}, dispatch] = useStateValue();
@@ -52,7 +53,7 @@ function LoginPage() {
       type: actionType.SET_USER,
       user: asd.providerData[0],
   })
-  localStorage.setItem("user",JSON.stringify(providerData[0]))
+  localStorage.setItem("user",JSON.stringify(asd.providerData[0]))
     toast.success('Login successful!')
     navigate('/Products')
     // ...
@@ -103,6 +104,7 @@ function LoginPage() {
             
         </motion.section>
     </div>
+    <Footer />
     </>
   )
 }

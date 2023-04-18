@@ -10,6 +10,7 @@ import { app, auth } from '../../firebase.config';
 
 import { actionType } from '../../context/reducer';
 import { useStateValue } from '../../context/StateProvider';
+import Footer from '../../components/Footer';
 
 function RegisterPage() {
   const [{user}, dispatch] = useStateValue();
@@ -108,6 +109,7 @@ function RegisterPage() {
             </form>
         </motion.section>
     </div>
+    <Footer />
     </>
   )
 }

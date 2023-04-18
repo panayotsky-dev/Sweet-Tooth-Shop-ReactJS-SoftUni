@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useStateValue } from '../context/StateProvider'
 import CartContainer from './CartContainer'
+import Footer from './Footer'
 
 function AboutUsPage() {
 
@@ -11,6 +12,7 @@ function AboutUsPage() {
   
 
   return (
+    <>
     <div className='w-full h-screen'>
     <main className='px-64 w-full flex justify-center items-center h-auto '>
       
@@ -23,6 +25,8 @@ function AboutUsPage() {
           <CartContainer />
         )}
     </div>
+    <Footer />
+    </>
   )
 }
 
