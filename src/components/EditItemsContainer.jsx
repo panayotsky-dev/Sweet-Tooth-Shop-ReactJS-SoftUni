@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import {motion} from 'framer-motion'
 import { useNavigate } from 'react-router';
 import { useStateValue } from '../context/StateProvider'
-import { deleteItem, getAllProducts,updateItem } from '../utils/firebaseFn'
+import { deleteItem, getAllProducts,testUpdate,updateItem } from '../utils/firebaseFn'
 import { actionType } from '../context/reducer'
 
 function EditItemsContainer({products}) {
@@ -12,25 +12,16 @@ function EditItemsContainer({products}) {
     const [description,setDescription] = useState('')
     const [price,setPrice] = useState('')
 
-const updateProduct = (id,title,description,price) =>{
-    
-    if(title.length < 1) {
-        setTitle(uploadedProducts[id].title)
-        console.log(title)
-    } 
-    if(description.length < 1){
-        setDescription(uploadedProducts[id].description)
-        console.log(description)
-    }
-    price.length < 1 ? setPrice(uploadedProducts[id].price) : setPrice(price)
-    console.log(description)
+const updateProduct = (id) =>{
+   let myProduct = uploadedProducts.filter((item)=>item.id === id)
+   
     const item = {
-        id,
-        title,
-        imageUrl: uploadedProducts[id].imageUrl,
-        category: uploadedProducts[id].category,
-        description,
-        price,
+        id:myProduct[0].id,
+        title: title ? title:myProduct[0].title ,
+        imageUrl: myProduct[0].imageUrl,
+        category: myProduct[0].category,
+        description: description ?  description : myProduct[0].description,
+        price: price ? price : myProduct[0].price,
         quantity: 1,
       }
       updateItem(item)     
@@ -89,7 +80,7 @@ const fetchItems = async () => {
                     
                 </div>
                 <button className='w-[10%] p-2 rounded-full bg-slate-600 text-red-300 text-lg font-bold mb-8 mt-4 px-4 mx-4' onClick={()=> deleteItem(product.id)}>Delete</button>
-                <button className='w-[20%] p-2 rounded-full bg-slate-600 text-[#FEEBD6] text-lg font-bold mb-8 mt-4 px-4 mx-4' onClick={() => updateProduct(product.id,title,description,price)}>Edit</button>
+                <button className='w-[20%] p-2 rounded-full bg-slate-600 text-[#FEEBD6] text-lg font-bold mb-8 mt-4 px-4 mx-4' onClick={() => updateProduct(product.id)}>Edit</button>
             </div> 
         ))}
     </div>

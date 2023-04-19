@@ -18,13 +18,17 @@ export const saveItem = async (item) =>{
 }
 export const updateItem = async (item) => {
     if (item.id) { // If item already has an ID, update existing document
-      await updateDoc(doc(db, 'uploadedProducts', item.id), item);
+        
+        const docRef = doc(db, 'uploadedProducts', item.id);
+        console.log(docRef)
+      await updateDoc(docRef, item);
     }
-    // } else { // Otherwise, create new document with auto-generated ID
-    //   await setDoc(doc(db, 'uploadedProducts', `${Date.now()}`), item);
-    // }
+   
   };
 
+export const testUpdate = (updated) => {
+    db.ref(`uploadedProducts/${updated.id}`).update(updated);
+}
 // fetching all items
 export const getAllProducts = async () =>{
     const items = await getDocs(
