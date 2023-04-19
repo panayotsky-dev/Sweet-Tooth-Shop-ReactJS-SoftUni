@@ -78,19 +78,19 @@ Sweet Tooth is an e-shop with unique design that provides an easy and intuitive 
 ![sweetth-03](https://user-images.githubusercontent.com/104060829/232937257-2e36aa00-96d2-4335-9adb-c1621d2fc7ff.png)
 ### Icon
 ![zubche-32](https://user-images.githubusercontent.com/104060829/232937098-cf2aaa0a-37cd-4d25-9981-bf89ed60c315.png)
-### Coffe Cup
+### Branded Coffe Cup
 ![Coffee-Cup-sweet-tooth](https://user-images.githubusercontent.com/104060829/232937411-4a9657d5-c142-414b-be92-14db58abf8a0.png)
-### Product1
+### Branded Product1
 ![1-cappuccino](https://user-images.githubusercontent.com/104060829/232937458-c908bf40-4887-4ed9-963f-d014de334a7f.png)
-### Product2
+### Branded Product2
 ![1-caramel-cortado](https://user-images.githubusercontent.com/104060829/232937483-425a2bbe-0808-4aff-a2fe-d1491c21e682.png)
-### Product3
+### Branded Product3
 ![1-espresso](https://user-images.githubusercontent.com/104060829/232937496-b60405ff-23d9-4e97-bd03-f5767886734d.png)
-### Product4
+### Branded Product4
 ![1-mocha-cortado](https://user-images.githubusercontent.com/104060829/232937519-c4a8e069-422b-4bf3-942a-76d0c365c331.png)
-### Product5
+### Branded Product5
 ![coffee-long](https://user-images.githubusercontent.com/104060829/232937526-8e6866b1-4eac-4461-85d3-10f61a5d51c5.png)
-### Product6
+### Branded Product6
 ![flat-white](https://user-images.githubusercontent.com/104060829/232937534-c0cdb583-1758-4772-8d4d-9ac1f17ac1c0.png)
 
 ## Thank you for your time and yes i know that i put a lot of effort ;)
