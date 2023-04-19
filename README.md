@@ -2,17 +2,18 @@ Hello! As the developer of the Sweet Tooth e-shop project, I am happy to share w
  
  Project is deployed at vercel : https://sweet-tooth.vercel.app
 
-Project Description:
+### Project Description:
 
-Sweet Tooth is an e-shop that sells coffee and sweet products. The website is built using ReactJS, Framer-Motion, and TailwindCSS. The website has an attractive UI design with a modern look and feel. The website uses Firebase for the database, storage, and authentication with Google.
+Sweet Tooth is an e-shop that sells coffee and sweet products. The website is built using **ReactJS**, **Framer-Motion**, and **TailwindCSS**. The website has an **attractive UI design** with a **modern look** and feel. The website uses **Firebase** for the database, storage, and **authentication with Google**.
 
-Features:
+### Features:
 
-1.Logo and Product Design: The logo and product design were created using Adobe Illustrator to give the website a unique and professional look.
+**1. Logo and Product Design:**
+#### The logo and product design were created using Adobe Illustrator to give the website a unique and professional look.
 
 2.Home Page: The home page contains an animated image and button that redirect you to the product page.
 
-3.Product Listing Page: The product listing page displays all the sweet and coffee products available on the website. The products are displayed in an attractive grid layout, and a user can filter the products based on their category(search button was was not that satisfying UX option).
+#### 3.Product Listing Page: The product listing page displays all the sweet and coffee products available on the website. The products are displayed in an attractive grid layout, and a user can filter the products based on their category(search button was was not that satisfying UX option).
 
 4.Product Detail Page: The product detail page displays the details of the selected product. It includes the product name, image, description, price, and the option to add the product to the cart.
 
@@ -26,24 +27,24 @@ Technical Details:
 
 ReactJS: ReactJS is used to build the website. It helps in creating reusable UI components and provides a rich set of tools and libraries to speed up the development process.
 
-Redux: Redux is used to manage the state of the application. It helps in creating a centralized store for the application data, which can be accessed by any component.
+**Redux**: Redux is used to manage the state of the application. It helps in creating a centralized store for the application data, which can be accessed by any component.
 
-useState: The useState hook is used to manage the state of the functional components.
+**useState**: The useState hook is used to manage the state of the functional components.
 
-useEffect: The useEffect hook is used to handle side effects in the functional components.
+**useEffect**: The useEffect hook is used to handle side effects in the functional components.
 
-useStateValue: The useStateValue hook is used to access the state of the Redux store.
+**useStateValue**: The useStateValue hook is used to access the state of the Redux store.
 
-Framer-Motion: Framer-Motion is used to create the animation on the website. It provides an easy-to-use API to create complex animations and interactions.
+**Framer-Motion**: Framer-Motion is used to create the animation on the website. It provides an easy-to-use API to create complex animations and interactions.
 
-TailwindCSS: TailwindCSS is used to style the website. It is a utility-first CSS framework that helps in creating responsive and consistent UI designs.
+**TailwindCSS**: TailwindCSS is used to style the website. It is a utility-first CSS framework that helps in creating responsive and consistent UI designs.
 
-Firebase: Firebase is used to host the website and store the application data. It provides a real-time database, storage, and authentication services which are used to manage the user data.
+**Firebase**: Firebase is used to host the website and store the application data. It provides a real-time database, storage, and authentication services which are used to manage the user data.
 
-BONUS:
+### **BONUS**:
 
 Due to timelimit i didn't manage to give the 100% user experience that i've wanted.
-I've created Rive animations but was not perfect to implemented it here is a link for one of them:
+I've created **Rive** **animations** but was not perfect to implemented it here is a link for one of them:
 (onClick state animation)
 https://rive.app/community/4868-9844-enter-button/
 (Also i have created mouse tracking animation logo, but in some future projects )
