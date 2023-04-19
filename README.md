@@ -84,10 +84,13 @@ Sweet Tooth is an e-shop with unique design that provides an easy and intuitive 
 ![1-cappuccino](https://user-images.githubusercontent.com/104060829/232937458-c908bf40-4887-4ed9-963f-d014de334a7f.png)
 ### Product2
 ![1-caramel-cortado](https://user-images.githubusercontent.com/104060829/232937483-425a2bbe-0808-4aff-a2fe-d1491c21e682.png)
-### Product3![1-espresso](https://user-images.githubusercontent.com/104060829/232937496-b60405ff-23d9-4e97-bd03-f5767886734d.png)
+### Product3
+![1-espresso](https://user-images.githubusercontent.com/104060829/232937496-b60405ff-23d9-4e97-bd03-f5767886734d.png)
 ### Product4
 ![1-mocha-cortado](https://user-images.githubusercontent.com/104060829/232937519-c4a8e069-422b-4bf3-942a-76d0c365c331.png)
 ### Product5
 ![coffee-long](https://user-images.githubusercontent.com/104060829/232937526-8e6866b1-4eac-4461-85d3-10f61a5d51c5.png)
 ### Product6
 ![flat-white](https://user-images.githubusercontent.com/104060829/232937534-c0cdb583-1758-4772-8d4d-9ac1f17ac1c0.png)
+
+## Thank you for your time and yes i know that i put a lot of effort ;)
