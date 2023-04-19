@@ -40,11 +40,15 @@ TailwindCSS: TailwindCSS is used to style the website. It is a utility-first CSS
 
 Firebase: Firebase is used to host the website and store the application data. It provides a real-time database, storage, and authentication services which are used to manage the user data.
 
-Bonus:
+BONUS:
 
 Due to timelimit i didn't manage to give the 100% user experience that i've wanted.
-I've created Rive animation but was not perfect to implemented it here is a link:
+I've created Rive animations but was not perfect to implemented it here is a link for one of them:
+(onClick state animation)
 https://rive.app/community/4868-9844-enter-button/
+(Also i have created mouse tracking animation logo, but in some future projects )
+
+
 
 Conclusion:
 
