@@ -69,3 +69,25 @@ Sweet Tooth is an e-shop with unique design that provides an easy and intuitive 
 ![logerr3](https://user-images.githubusercontent.com/104060829/232928817-7e8bcaa2-865f-445a-8534-c7b3a5619034.PNG)
 ![logerr2](https://user-images.githubusercontent.com/104060829/232928825-5c0145c5-6f93-4c83-a1ab-7bf46f4ebdad.PNG)
 ![RegErr1](https://user-images.githubusercontent.com/104060829/232928840-aa77e582-3161-42ea-b8ce-504e72bd8714.PNG)
+
+### Logo v1
+![sweetth-01](https://user-images.githubusercontent.com/104060829/232937340-2a8816ba-c193-4904-9581-2d4ba2e55343.png)
+### Logo v2
+![sweetth-02](https://user-images.githubusercontent.com/104060829/232937031-f610a8f0-d5e9-4b59-99bb-3f0da7482add.png)
+### Logo v3
+![sweetth-03](https://user-images.githubusercontent.com/104060829/232937257-2e36aa00-96d2-4335-9adb-c1621d2fc7ff.png)
+### Icon
+![zubche-32](https://user-images.githubusercontent.com/104060829/232937098-cf2aaa0a-37cd-4d25-9981-bf89ed60c315.png)
+### Coffe Cup
+![Coffee-Cup-sweet-tooth](https://user-images.githubusercontent.com/104060829/232937411-4a9657d5-c142-414b-be92-14db58abf8a0.png)
+### Product1
+![1-cappuccino](https://user-images.githubusercontent.com/104060829/232937458-c908bf40-4887-4ed9-963f-d014de334a7f.png)
+### Product2
+![1-caramel-cortado](https://user-images.githubusercontent.com/104060829/232937483-425a2bbe-0808-4aff-a2fe-d1491c21e682.png)
+### Product3![1-espresso](https://user-images.githubusercontent.com/104060829/232937496-b60405ff-23d9-4e97-bd03-f5767886734d.png)
+### Product4
+![1-mocha-cortado](https://user-images.githubusercontent.com/104060829/232937519-c4a8e069-422b-4bf3-942a-76d0c365c331.png)
+### Product5
+![coffee-long](https://user-images.githubusercontent.com/104060829/232937526-8e6866b1-4eac-4461-85d3-10f61a5d51c5.png)
+### Product6
+![flat-white](https://user-images.githubusercontent.com/104060829/232937534-c0cdb583-1758-4772-8d4d-9ac1f17ac1c0.png)
